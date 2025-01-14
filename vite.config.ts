@@ -6,9 +6,11 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 import manifest from './manifest.json';
 
+const isGitHubPages = process.env.BUILD_TARGET === 'github';
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/crispy-journey/', // Add the repository name here
+  base: isGitHubPages ? '/crispy-journey/' : './', // Add the repository name here
   build: {
     outDir: 'dist',
   },
