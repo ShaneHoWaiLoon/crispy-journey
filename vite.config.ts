@@ -8,6 +8,10 @@ import manifest from './manifest.json';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/skyPWA/', // Add the repository name here
+  build: {
+    outDir: 'dist',
+  },
   plugins: [
     react(),
     VitePWA({
