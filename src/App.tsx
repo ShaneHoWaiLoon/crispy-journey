@@ -19,7 +19,7 @@ function App() {
       <Notifications />
       <HotKeys />
       <SW />
-      <BrowserRouter>
+      <BrowserRouter basename="/crispy-journey">
         <Header />
         <Sidebar />
         <Pages />
