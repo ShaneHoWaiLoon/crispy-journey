@@ -13,6 +13,8 @@ export default defineConfig({
   base: isGitHubPages ? '/crispy-journey/' : './', // Add the repository name here
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
   },
   plugins: [
     react(),
